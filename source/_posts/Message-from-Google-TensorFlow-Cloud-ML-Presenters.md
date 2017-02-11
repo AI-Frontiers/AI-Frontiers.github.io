@@ -1,6 +1,7 @@
 ---
 title: ' Message from Google TensorFlow / Cloud ML Presenters'
 date: 2017-01-16 22:18:48
+feature: '/images/TensorFlow.jpg'
 tags:
 ---
 
