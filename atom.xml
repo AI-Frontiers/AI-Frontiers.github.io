@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.aifrotiers.com/"/>
-  <updated>2017-02-12T18:45:41.000Z</updated>
+  <updated>2017-02-12T18:26:44.000Z</updated>
   <id>https://www.aifrotiers.com/</id>
   
   <author>
@@ -14,6 +14,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>News Reports on AI Frontiers Conference</title>
+    <link href="https://www.aifrotiers.com/2017/01/20/News-Reports-on-AI-Frontiers-Conference/"/>
+    <id>https://www.aifrotiers.com/2017/01/20/News-Reports-on-AI-Frontiers-Conference/</id>
+    <published>2017-01-20T21:29:17.000Z</published>
+    <updated>2017-02-12T18:26:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>MIT Tech Review</strong>:<br><a href="https://www.technologyreview.com/s/603381/ai-software-learns-to-make-ai-software/" target="_blank" rel="external">“AI Software Learns to Make AI Software”</a> January 18, 2017<br><a href="https://www.technologyreview.com/s/603380/alexa-gives-amazon-a-powerful-data-advantage/" target="_blank" rel="external">“Alexa Gives Amazon a Powerful Data Advantage”</a> January 18, 2017</p>
+<p><strong>Mashable</strong>:<br><a href="http://mashable.com/2017/01/11/inbox-smart-replies-adoption/" target="_blank" rel="external">“Google’s AI is writing a lot of emails”</a> January 11, 2017</p>
+<p><strong>Venturebeat</strong>:<br><a href="http://venturebeat.com/2017/01/11/google-has-slashed-its-speech-recognition-word-error-by-more-than-30-since-2012/" target="_blank" rel="external">“Google has slashed its speech recognition word error rate by more than 30% since 2012”</a> January 11, 2017</p>
+<p><strong>Techcrunch</strong>:<br><a href="https://techcrunch.com/2017/01/11/training-self-driving-cars-on-the-streets-of-los-santos-with-gta-v-just-got-easier/" target="_blank" rel="external">“Training self-driving cars on the streets of Los Santos with GTA V just got easier”</a> January 11, 2017</p>
+<p><strong>9to5Google</strong>:<br><a href="https://9to5google.com/2017/01/12/google-speech-recognition-error-rate-down-by-30-percent/" target="_blank" rel="external">“Google has cut down its speech recognition error rate by over 30% in the last five years”</a> January 12, 2017</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;MIT Tech Review&lt;/strong&gt;:&lt;br&gt;&lt;a href=&quot;https://www.technologyreview.com/s/603381/ai-software-learns-to-make-ai-software/&quot; target=&quot;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Slides Now Available on Our Website</title>
