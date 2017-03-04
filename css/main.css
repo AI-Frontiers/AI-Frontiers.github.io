@@ -501,6 +501,9 @@ header {
 .headerlink {
   display: none; }
 
+.container {
+  min-height: calc(100vh - 208px); }
+
 .post-block {
   overflow: hidden; }
   .post-block .post-info {
