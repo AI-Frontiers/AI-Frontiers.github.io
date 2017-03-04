@@ -1,30 +1,20 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title>About Us · AI Frontiers Blog</title><meta name="description" content="About Us - Impact Deep LLC."><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/images/favicon.png"><link rel="stylesheet" href="/vendor/slick/slick.css"><link rel="stylesheet" href="/vendor/slick/slick-theme.css"><link rel="stylesheet" href="/vendor/slickNav/slicknav.css"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,400i,700,700i"><link rel="search" type="application/opensearchdescription+xml" href="https://www.aifrotiers.com/atom.xml" title="AI Frontiers Blog"></head><body><div class="wrap"><header><div class="header-wrap"><a href="/" class="logo-link"><img src="/images/logo.png" alt="logo"></a><ul class="nav nav-main nav-list"><li class="nav-list-item"><a href="https://www.aifrontiers.com/2017" target="_blank" class="nav-list-link">2017</a></li><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li></ul></div></header><div class="jumbotron"></div><main class="container"><div class="post container-left"><article class="post-block"><div class="post-info">Mar 3, 2017</div><h1 class="post-title">About Us</h1><div class="post-feature"><iframe src="//www.youtube.com/embed/jCB_z7SDo1c" frameborder="0" allowfullscreen=""></iframe></div><div class="post-content"><p>We are <strong>an organization for artificial intelligence and Big Data professionals</strong> that <a href="http://www.aifrontiers.com/" target="_blank" rel="external">innovate</a> and build our success through <em>global information exchange</em>.<br>what do we do?</p>
-</div></article></div></main><footer><div class="paginator"></div><div class="copyright"><p>© 2016 - 2017 <a href="https://www.aifrotiers.com">Impact Deep LLC.</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script><script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script><script type="text/javascript" src="/vendor/slick/slick.min.js"></script><script type="text/javascript" src="/vendor/slickNav/jquery.slicknav.min.js"></script><script type="text/javascript">$(document).ready(function(){
-    // initialize slick slider
-    $('.slider').slick({
-        arrows: true,
-        centerMode: true,
-        centerPadding: 0
-    });
-    $('.nav').slicknav({
-        label:"",
-        appendTo: ".header-wrap"
-    });
-    // initialize twitter timeline
-    var twitterWidgetHeight = $('.container-left').height() - ($('.videos').height() || 0);
-    if (twitterWidgetHeight < 400) {
-        twitterWidgetHeight = 400;
-        }
+extends partial/layout
 
-    $('.twitter-timeline').attr('data-height', twitterWidgetHeight);
+block site_title
+    != page.title + " · " + config.title
 
-    loadScriptSync("//platform.twitter.com/widgets.js");
-})
-function loadScriptSync (src) {
-    var s = document.createElement('script');
-    s.src = src;
-    s.type = "text/javascript";
-    s.async = false;                                 // <-- this is important
-    s.charset = "utf-8";
-    document.getElementsByTagName('head')[0].appendChild(s);
-}</script></body></html>
+block description
+    - var desc = page.desc || page.title + ' - ' + config.author;
+    meta(name="description", content=desc)
+
+block container
+    include mixins/post
+    +post(page)
+
+block pagination
+    include mixins/paginator
+    +post()
+    include partial/comment
+
+block copyright
+    include partial/copyright
