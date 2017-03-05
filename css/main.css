@@ -960,6 +960,7 @@ footer {
 
 aside.sidebar {
   margin-left: 40px; }
+  aside.sidebar .slideshare-heading span,
   aside.sidebar .twitter-heading span {
     display: block;
     padding: 10px;
@@ -970,6 +971,8 @@ aside.sidebar {
     color: #000B17;
     border-bottom: 1px solid rgba(15, 70, 100, 0.12);
     width: calc(100% - 20px); }
+  aside.sidebar .slideshare ul.slideshare-list li {
+    margin: 10px 20px; }
   aside.sidebar .twitter-heading span {
     border-bottom: 0; }
   aside.sidebar .twitter-timeline iframe {
