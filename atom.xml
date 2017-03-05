@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog-beta.aifrontiers.com/"/>
-  <updated>2017-02-21T05:22:06.000Z</updated>
+  <updated>2017-03-05T08:25:29.000Z</updated>
   <id>http://blog-beta.aifrontiers.com/</id>
   
   <author>
@@ -14,6 +14,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test for no date</title>
+    <link href="http://blog-beta.aifrontiers.com/2017/03/05/test/"/>
+    <id>http://blog-beta.aifrontiers.com/2017/03/05/test/</id>
+    <published>2017-03-05T08:25:31.328Z</published>
+    <updated>2017-03-05T08:25:29.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Upcoming meetup on deep learning</title>
