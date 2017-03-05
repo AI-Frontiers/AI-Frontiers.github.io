@@ -971,6 +971,10 @@ aside.sidebar {
     color: #000B17;
     border-bottom: 1px solid rgba(15, 70, 100, 0.12);
     width: calc(100% - 20px); }
+    aside.sidebar .slideshare-heading span .more,
+    aside.sidebar .twitter-heading span .more {
+      font-size: 16px;
+      float: right; }
   aside.sidebar .slideshare ul.slideshare-list li {
     margin: 10px 20px; }
   aside.sidebar .twitter-heading span {
@@ -1072,6 +1076,8 @@ aside.sidebar {
   .wrap {
     width: 100%;
     margin: 0 auto; }
+  .nav-sub {
+    display: none; }
   .videos .videos-heading {
     border-left: #FFA100 5px solid;
     padding-left: 15px;
@@ -1093,8 +1099,6 @@ aside.sidebar {
       width: 620px;
       height: 280px;
       max-width: 90%; }
-  .videos #video2 {
-    display: none; }
   header .header-wrap {
     max-width: 1400px;
     padding: 0 20px; }
@@ -1161,8 +1165,6 @@ aside.sidebar {
     text-align: center;
     font-size: 24px;
     margin-bottom: 0; }
-  #video2 {
-    display: none; }
   main.container {
     display: -webkit-box;
     display: -ms-flexbox;
