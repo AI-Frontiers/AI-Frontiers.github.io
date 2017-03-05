@@ -2,6 +2,7 @@ _site
 .sass-cache
 .jekyll-metadata
 .idea
+db.json
 public
 source
 node_modules
