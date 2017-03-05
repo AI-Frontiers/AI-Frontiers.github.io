@@ -502,7 +502,7 @@ header {
   display: none; }
 
 .container {
-  min-height: calc(100vh - 208px); }
+  min-height: calc(100vh - 310px); }
 
 .post-block {
   overflow: hidden; }
