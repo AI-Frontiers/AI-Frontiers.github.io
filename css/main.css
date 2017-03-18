@@ -388,6 +388,14 @@ body {
   background-color: #fff;
   font-family: 'Roboto', Arial, sans-serif; }
 
+.wrap {
+  width: 100%; }
+
+main.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 ul.nav {
   list-style-type: none; }
 
@@ -496,13 +504,13 @@ header {
   color: #FFA100; }
 
 .post {
-  padding-top: 1em; }
+  padding-top: 40px;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 840px; }
 
 .headerlink {
   display: none; }
-
-.container {
-  min-height: calc(100vh - 310px); }
 
 .post-block {
   overflow: hidden; }
@@ -900,6 +908,7 @@ footer {
     color: white !important; }
 
 .subscribe {
+  width: 100%;
   background: #1A344F;
   opacity: .8; }
 
@@ -984,16 +993,10 @@ aside.sidebar {
 
 @media screen and (min-width: 1000px) {
   main.container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin: auto;
     margin-top: 2em;
     max-width: 1400px;
-    width: calc(100% - 40px);
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    width: calc(100% - 40px); }
   header .header-wrap {
     max-width: 1400px;
     padding: 0 20px; }
@@ -1047,8 +1050,6 @@ aside.sidebar {
       width: 620px;
       height: 280px;
       max-width: 45%; }
-  .subscribe {
-    width: 100%; }
   .subscribe-wrap {
     width: 850px;
     position: relative;
@@ -1073,17 +1074,22 @@ aside.sidebar {
         min-width: 150px; } }
 
 @media screen and (max-width: 999px) and (min-width: 701px) {
-  .wrap {
-    width: 100%;
-    margin: 0 auto; }
-  .nav-sub {
-    display: none; }
-  .videos .videos-heading {
+  header .header-wrap {
+    max-width: 1400px;
+    padding: 0 20px; }
+  header .logo-link {
+    position: absolute; }
+    header .logo-link img {
+      height: 30px;
+      padding: 10px 0; }
+  header ul.nav li a {
+    padding: 13px 15px; }
+  .jumbotron .videos-heading {
     border-left: #FFA100 5px solid;
     padding-left: 15px;
     width: 18%;
     font-size: 28px; }
-  .videos .slider {
+  .jumbotron .slider {
     width: 70%;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1095,22 +1101,10 @@ aside.sidebar {
     height: 330px;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
-    .videos .slider iframe {
+    .jumbotron .slider iframe {
       width: 620px;
       height: 280px;
       max-width: 90%; }
-  header .header-wrap {
-    max-width: 1400px;
-    padding: 0 20px; }
-  header .logo-link {
-    position: absolute; }
-    header .logo-link img {
-      height: 30px;
-      padding: 10px 0; }
-  header ul.nav li a {
-    padding: 13px 15px; }
-  .subscribe {
-    width: 100%; }
   .subscribe-wrap {
     width: 850px;
     position: relative;
@@ -1134,25 +1128,26 @@ aside.sidebar {
         width: 100%;
         min-width: 150px; }
   .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin: 0 40px; }
   .container-left {
     width: 60%; }
   .sidebar {
     padding-top: 18px;
     width: 40%; }
-  .post-list-item {
+    .sidebar .slideshare .slideshare-heading {
+      font-size: 22px; }
+    .sidebar .slideshare .slideshare-list {
+      font-size: 13px; }
+  .post-list .post-list-item {
     padding: 1.2em 0 2em; }
-  .post-block .post-info {
+  .post-list .post-info {
     font-size: 1em; }
-  .post-block .post-title {
-    font-size: 2em;
+  .post-list .post-title {
+    font-size: 22px;
     line-height: 1.2;
     padding-bottom: .2em; }
-  .post-block .post-content {
-    font-size: 16px; } }
+  .post-list .post-content {
+    font-size: 13px; } }
 
 @media screen and (max-width: 700px) {
   .videos {
@@ -1166,12 +1161,7 @@ aside.sidebar {
     font-size: 24px;
     margin-bottom: 0; }
   main.container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin: 1em 1em; }
-  .wrap {
-    width: 100%; }
   .header-wrap {
     position: relative; }
     .header-wrap .logo-link {
@@ -1189,10 +1179,10 @@ aside.sidebar {
     height: 225px; }
     .slider .slick-arrow {
       display: none !important; }
-  .subscribe .subscribe-wrap {
+  .subscribe-wrap {
     display: block;
     overflow: hidden; }
-    .subscribe .subscribe-wrap .quote {
+    .subscribe-wrap .quote {
       display: block;
       text-align: center;
       box-sizing: border-box;
@@ -1201,21 +1191,21 @@ aside.sidebar {
       line-height: 26px;
       margin-bottom: 10px;
       padding: 8px 18px 0; }
-    .subscribe .subscribe-wrap form.subscribe-form {
+    .subscribe-wrap form.subscribe-form {
       width: 100%;
       box-sizing: border-box;
       font-size: 15px; }
-      .subscribe .subscribe-wrap form.subscribe-form input.email {
+      .subscribe-wrap form.subscribe-form input.email {
         height: 40px; }
-        .subscribe .subscribe-wrap form.subscribe-form input.email:focus {
+        .subscribe-wrap form.subscribe-form input.email:focus {
           background: #ECECEC !important; }
-          .subscribe .subscribe-wrap form.subscribe-form input.email:focus::-webkit-input-placeholder {
+          .subscribe-wrap form.subscribe-form input.email:focus::-webkit-input-placeholder {
             color: #CCC; }
-          .subscribe .subscribe-wrap form.subscribe-form input.email:focus::-moz-placeholder {
+          .subscribe-wrap form.subscribe-form input.email:focus::-moz-placeholder {
             color: #CCC; }
-          .subscribe .subscribe-wrap form.subscribe-form input.email:focus:-ms-input-placeholder {
+          .subscribe-wrap form.subscribe-form input.email:focus:-ms-input-placeholder {
             color: #CCC; }
-          .subscribe .subscribe-wrap form.subscribe-form input.email:focus::placeholder {
+          .subscribe-wrap form.subscribe-form input.email:focus::placeholder {
             color: #CCC; }
   .container-left {
     margin-top: 18px; }
@@ -1232,7 +1222,4 @@ aside.sidebar {
     font-size: 14px; }
     .post-block .post-content h2, .post-block .post-content h3, .post-block .post-content h4, .post-block .post-content h5, .post-block .post-content h6 {
       max-width: 300px;
-      left: 15px; }
-  .ds-thread,
-  #disqus_thread {
-    margin: 2em 10px; } }
+      left: 15px; } }
