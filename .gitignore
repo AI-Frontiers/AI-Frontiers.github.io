@@ -1,8 +1,9 @@
 _site
 .sass-cache
 .jekyll-metadata
-.idea
+.idea/
 db.json
-public
-source
-node_modules
+public/
+source/
+node_modules/
+.deploy_git/
