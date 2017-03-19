@@ -1084,6 +1084,8 @@ aside.sidebar {
       padding: 10px 0; }
   header ul.nav li a {
     padding: 13px 15px; }
+  .jumbotron .video-hide {
+    display: none; }
   .jumbotron .videos-heading {
     border-left: #FFA100 5px solid;
     padding-left: 15px;
@@ -1155,6 +1157,8 @@ aside.sidebar {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+  .video-hide {
+    display: none; }
   .videos-heading {
     width: 80%;
     text-align: center;
