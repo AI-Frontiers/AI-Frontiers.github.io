@@ -438,7 +438,7 @@ table {
     vertical-align: text-top; }
 
 header {
-  background: #001934;
+  background: #1F2945;
   border-bottom: solid 2px #FFA100; }
 
 .header-wrap {
@@ -462,8 +462,6 @@ header {
   .header-wrap ul.nav-main {
     float: left;
     margin-left: 130px; }
-  .header-wrap ul.nav-sub {
-    float: right; }
   .header-wrap .slicknav_menu {
     display: none;
     padding: 0;
@@ -850,15 +848,25 @@ pre {
   margin-bottom: 2em; }
 
 footer {
-  padding-bottom: 1px; }
+  border-top: 1px solid #ddd;
+  padding-bottom: 20px; }
+  footer .nav-sub {
+    display: block;
+    text-align: center; }
+    footer .nav-sub li {
+      display: inline-block;
+      padding: 0 4px; }
+      footer .nav-sub li p, footer .nav-sub li a {
+        color: #aaa;
+        font-size: 14px;
+        font-weight: 100; }
   footer .copyright {
-    margin: 4em 0;
-    border-top: 1px solid #ddd;
     text-align: center; }
     footer .copyright p, footer .copyright a {
       color: #aaa;
       font-size: 14px;
-      font-weight: 100; }
+      font-weight: 100;
+      margin: 0; }
     footer .copyright a:hover {
       color: #888; }
 
@@ -933,6 +941,7 @@ footer {
     .subscribe-wrap form.subscribe-form input.email {
       background: #FFA100;
       box-sizing: border-box;
+      border-radius: 0 !important;
       padding: 0 15px;
       width: 100%;
       -webkit-transition: all .2s ease-out;
@@ -960,6 +969,7 @@ footer {
           color: #ECECEC; }
     .subscribe-wrap form.subscribe-form input.button {
       height: 40px;
+      border-radius: 0 !important;
       font-family: "Roboto Condensed";
       box-sizing: border-box;
       padding: 4px 12px;
