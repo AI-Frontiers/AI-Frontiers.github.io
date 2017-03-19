@@ -996,7 +996,10 @@ aside.sidebar {
     margin: auto;
     margin-top: 2em;
     max-width: 1400px;
-    width: calc(100% - 40px); }
+    width: calc(100% - 40px);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   header .header-wrap {
     max-width: 1400px;
     padding: 0 20px; }
